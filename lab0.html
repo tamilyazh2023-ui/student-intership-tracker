@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internship & Placement Tracker</title>
+</head>
+<body>
+
+<header align="center">
+    <h1>🎓 Internship & Placement Tracker</h1>
+    <p><em>Track • Apply • Analyze • Succeed</em></p>
+    <nav>
+        <a href="#student">Student</a> |
+        <a href="#company">Company</a> |
+        <a href="#admin">Admin</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<hr>
+
+<!-- ================= STUDENT SECTION ================= -->
+<section id="student">
+    <h2>👨‍🎓 Student Dashboard</h2>
+
+    <!-- PROFILE -->
+    <fieldset>
+        <legend><b>Student Profile</b></legend>
+        <p><b>Name:</b> John Doe</p>
+        <p><b>Roll No:</b> CS2026</p>
+        <p><b>Branch:</b> Computer Science</p>
+        <p><b>CGPA:</b> 8.4</p>
+        <p><b>Email:</b> johndoe@example.com</p>
+        <p><b>Profile Completion:</b></p>
+        <progress value="85" max="100"></progress> 85%
+    </fieldset>
+
+    <br>
+
+    <!-- SKILLS -->
+    <fieldset>
+        <legend><b>Skills</b></legend>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </fieldset>
+
+    <br>
+
+    <!-- APPLY -->
+    <fieldset>
+        <legend><b>Apply for Internship / Placement</b></legend>
+        <form>
+            <label>Company:</label>
+            <select>
+                <option>ABC Corp</option>
+                <option>XYZ Tech</option>
+                <option>InnovaTech</option>
+            </select><br><br>
+
+            <label>Role:</label>
+            <input list="roles">
+            <datalist id="roles">
+                <option value="Web Developer">
+                <option value="Data Analyst">
+                <option value="Software Engineer">
+            </datalist><br><br>
+
+            <label>Resume Version:</label>
+            <select>
+                <option>Resume_v1_Web.pdf</option>
+                <option>Resume_v2_Data.pdf</option>
+            </select><br><br>
+
+            <label>Upload Resume:</label>
+            <input type="file"><br><br>
+
+            <label>Cover Letter:</label><br>
+            <textarea rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Apply">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+
+    <br>
+
+    <!-- APPLICATION STATUS -->
+    <h3>📄 My Applications</h3>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Company</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Timeline</th>
+            <th>Skill Match</th>
+        </tr>
+        <tr>
+            <td>ABC Corp</td>
+            <td><time>2026-01-20</time></td>
+            <td>Interview</td>
+            <td><progress value="60" max="100"></progress></td>
+            <td><meter value="70" min="0" max="100"></meter></td>
+        </tr>
+        <tr>
+            <td>XYZ Tech</td>
+            <td><time>2026-01-22</time></td>
+            <td>Selected</td>
+            <td><progress value="100" max="100"></progress></td>
+            <td><meter value="90" min="0" max="100"></meter></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- INTERNSHIP FEEDBACK -->
+    <details>
+        <summary><b>Internship Feedback</b></summary>
+        <p>Company: XYZ Tech</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+        <p>Outcome: Improved real-world coding experience</p>
+        <p>Status: Completed</p>
+    </details>
+</section>
+
+<hr>
+
+<!-- ================= COMPANY SECTION ================= -->
+<section id="company">
+    <h2>🏢 Company Dashboard</h2>
+
+    <fieldset>
+        <legend><b>Post Opportunity</b></legend>
+        <form>
+            <label>Company Name:</label>
+            <input type="text"><br><br>
+
+            <label>Position:</label>
+            <input type="text"><br><br>
+
+            <label>Required Skills:</label>
+            <input type="text"><br><br>
+
+            <label>Minimum CGPA:</label>
+            <input type="number" step="0.1"><br><br>
+
+            <label>Deadline:</label>
+            <input type="date"><br><br>
+
+            <input type="submit" value="Post">
+        </form>
+    </fieldset>
+
+    <br>
+
+    <details>
+        <summary><b>Applicants List</b></summary>
+        <ul>
+            <li>John Doe – Shortlisted</li>
+            <li>Jane Smith – Selected</li>
+            <li>Alex Johnson – Rejected</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary><b>Interview Schedule</b></summary>
+        <p>John Doe – <time>2026-02-01</time> – Online</p>
+    </details>
+</section>
+
+<hr>
+
+<!-- ================= ADMIN SECTION ================= -->
+<section id="admin">
+    <h2>🛠 Admin Dashboard</h2>
+
+    <fieldset>
+        <legend><b>Placement Statistics</b></legend>
+        <p>Total Students: 120</p>
+        <p>Placed Students: 45</p>
+        <p>Internships Offered: 30</p>
+        <p>Top Recruiter: XYZ Tech</p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><b>Eligibility Control</b></legend>
+        <p>Minimum CGPA Required: 7.0</p>
+        <p>Eligible Branches: CSE, IT</p>
+    </fieldset>
+
+    <br>
+
+    <details>
+        <summary><b>System Notifications</b></summary>
+        <p><mark>New internship posted by ABC Corp</mark></p>
+        <p><mark>XYZ Tech completed placements</mark></p>
+    </details>
+
+    <br>
+
+    <p><b>Announcement:</b></p>
+    <marquee behavior="scroll">📢 Internship applications closing soon!</marquee>
+</section>
+
+<hr>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <h2>📞 Contact Placement Cell</h2>
+    <address>
+        Placement Office, ABC College<br>
+        Email: <a href="mailto:placement@example.com">placement@example.com</a><br>
+        Phone: +91 9876543210
+    </address>
+</section>
+
+<hr>
+
+<footer align="center">
+    <p>&copy; 2026 Internship & Placement Tracker</p>
+    <small>Mini Full Stack Web Programming Project</small>
+</footer>
+
+</body>
+</html>
